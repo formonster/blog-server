@@ -1,0 +1,19 @@
+{
+    "compilerOptions" : {
+        // 解决 import Koa from "koa"; 导入问题
+        "esModuleInterop": true,
+        // 装饰器
+        "experimentalDecorators": true,
+        // 加载 json 文件
+        "resolveJsonModule": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "baseUrl": ".",
+        "lib": [
+            "ES2020.Promise"
+        ],
+        "paths": {
+            "@/*": ["src/*"],
+        }
+    }
+}

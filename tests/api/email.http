@@ -1,0 +1,17 @@
+POST http://localhost:4600/api/public/email/sendCode HTTP/1.1
+content-type: application/json
+
+{
+    "recipient": "1739237939@qq.com",
+    "code": "000000"
+}
+
+###
+
+POST  http://localhost:4600/api/public/email/sendActivationEmail HTTP/1.1
+
+content-type: application/json
+
+{
+    "account": "1739237939@qq.com",
+}

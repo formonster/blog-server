@@ -1,0 +1,66 @@
+{
+  "name": "ioc-server-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsnd --respawn --transpile-only src/app.ts",
+    "cm": "ts-node scripts/createModel/index.ts",
+    "ctd": "ts-node scripts/createTableDesc/index.ts",
+    "ct": "ts-node scripts/createTableType/index.ts",
+    "start": "pm2 start pm2.config.js",
+    "stop": "pm2 stop pm2.config.js",
+    "restart": "pm2 restart pm2.config.js",
+    "del": "pm2 delete ioc-server",
+    "log": "pm2 monit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@alicloud/pop-core": "^1.7.10",
+    "@types/koa-bodyparser": "^4.3.1",
+    "@types/koa-session": "^5.10.4",
+    "@types/koa__router": "^8.0.4",
+    "@types/mysql": "^2.15.18",
+    "@types/ramda": "^0.27.45",
+    "@types/uuid": "^8.3.0",
+    "awilix": "^4.3.4",
+    "awilix-koa": "^4.0.0",
+    "dotenv": "^10.0.0",
+    "js-md5": "^0.7.3",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-cors": "^0.0.16",
+    "koa-jwt": "^4.0.1",
+    "koa-session": "^6.2.0",
+    "log4js": "^6.3.0",
+    "mockjs": "^1.1.0",
+    "module-alias": "^2.2.2",
+    "mssql": "^7.2.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.0",
+    "nodemailer": "^6.6.5",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "quicktype-core": "^6.0.70",
+    "ramda": "^0.27.1",
+    "svg-captcha": "^1.4.0",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.4.3",
+    "uuid": "^8.3.2"
+  },
+  "_moduleAliases": {
+    "@/utils": "src/utils",
+    "@/config": "src/config"
+  },
+  "devDependencies": {
+    "@types/koa-cors": "^0.0.2",
+    "@types/nodemailer": "^6.4.4",
+    "@types/nodemailer-smtp-transport": "^2.7.5"
+  }
+}

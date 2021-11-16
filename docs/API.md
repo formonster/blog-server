@@ -1,0 +1,3 @@
+- [ts-node-dev] https://www.npmjs.com/package/ts-node-dev
+- [ts-node] https://github.com/TypeStrong/ts-node
+- [quicktype] https://www.npmjs.com/package/quicktype

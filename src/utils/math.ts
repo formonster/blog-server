@@ -1,0 +1,1 @@
+export const numberCode = (len: number = 6) => Math.random().toString().slice(-len);
